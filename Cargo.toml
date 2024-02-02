@@ -1,0 +1,10 @@
+[package]
+name = "test-csv-mut-ref"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+chrono = "0.4.33"
+csv = { git = "https://github.com/huntc/rust-csv.git", rev = "48aec72426dc0428daee42a0a33a1f5d3ffb262b" }
+tokio = { version = "1.35.1", features = ["full"] }
+tokio-stream = "0.1.14"
