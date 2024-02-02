@@ -12,10 +12,10 @@ async fn main() {
     // than a channel of course.
     //
     // One particular use case is where the stream is sourced from an undefined
-    // number of records, such as though read from a database. As each database
-    // record is read, we then serialise to a CSV form and return that stream
-    // as the body of an HTTP response. For example, if Axum is used, then a
-    // response body can be established per:
+    // number of records, such as when read from a database asynchronously.
+    // As each database record is read, we then serialise to a CSV form and return
+    // that stream as the body of an HTTP response. For example, if Axum is used,
+    // then a response body can be established per:
     //
     //    let body = Body::from_stream(event_stream);
 
